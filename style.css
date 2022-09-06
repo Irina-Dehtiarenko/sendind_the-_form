@@ -1,0 +1,82 @@
+:root {
+  --color-violette: rgb(94, 38, 80);
+  --color-light-violette: rgb(135, 75, 120);
+  --color-dark-pink: rgb(168, 117, 154);
+  --color-pink: rgb(218, 169, 205);
+  --color-light-pink: rgb(247, 222, 241);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(
+    to left bottom,
+    var(--color-light-violette),
+    var(--color-pink)
+  );
+}
+main {
+  min-width: 30%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+
+  padding: 30px 20px;
+  background: linear-gradient(
+    to right top,
+    var(--color-light-violette),
+    var(--color-pink)
+  );
+  border-radius: 20px;
+  box-shadow: 0px 8px 24px 0 rgba(0, 0, 0, 0.3);
+  /* 3d effect */
+}
+input,
+button,
+textarea {
+  width: 100%;
+  padding: 5px;
+  background: rgba(218, 169, 205, 0.3);
+  border: none;
+  /* color: var(--color-dark-pink); */
+  /* color: var(--color-light-violette); */
+  font-size: 24px;
+  box-shadow: 0px 8px 10px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  outline: solid 3px var(--color-light-pink);
+}
+
+input,
+button,
+textarea,
+label {
+  /* color: var(--color-light-pink); */
+  color: var(--color-light-violette);
+  font-size: 24px;
+}
+.form__input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+label {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+}
+button {
+  margin: 10px auto;
+  width: 50%;
+
+  cursor: pointer;
+}

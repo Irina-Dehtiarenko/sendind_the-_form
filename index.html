@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Sending form</title>
+  </head>
+  <body>
+    <main>
+      <form action="">
+        <div class="form__input-container">
+          <input id="userName" type="text" aria-label="User name" />
+          <label for="userName">Name</label>
+        </div>
+        <div class="form__input-container">
+          <input id="email" type="mail" aria-label="Email" />
+          <label for="email">E-mail</label>
+        </div>
+        <div class="form__input-container">
+          <textarea
+            name="text"
+            id="text"
+            cols="21"
+            rows="5"
+            aria-label="Text"
+          ></textarea>
+          <label for="text">Text</label>
+        </div>
+
+        <button>Send</button>
+      </form>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
