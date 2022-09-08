@@ -50,14 +50,14 @@ body {
   height: 50vh;
   position: absolute;
   left: 0;
-  top: -30%;
+  top: 10%;
   animation: move1 10s linear infinite;
 }
 .bg__dot:nth-child(2) {
   width: 30vh;
   height: 30vh;
   left: 50%;
-  top: 90%;
+  top: 70%;
   animation: move2 15s infinite linear;
 }
 main {
@@ -203,18 +203,48 @@ button::after {
 
 @keyframes move1 {
   from {
-    transform: translateY(-40vh);
+    transform: translateX(-40vh);
   }
   to {
-    transform: translateY(130vh);
+    transform: translateX(100vw);
   }
 }
 
 @keyframes move2 {
   from {
-    transform: translateY(10vh);
+    transform: translateX(50vw);
   }
   to {
-    transform: translateY(-130vh);
+    transform: translateX(-65vw);
+  }
+}
+
+@media (orientation: portrait) {
+  .bg__dot:nth-child(1) {
+    left: 0;
+    top: -30%;
+    /* animation: move1 10s linear infinite; */
+  }
+  .bg__dot:nth-child(2) {
+    left: 50%;
+    top: 90%;
+    /* animation: move2 15s infinite linear; */
+  }
+  @keyframes move1 {
+    from {
+      transform: translateY(-40vh);
+    }
+    to {
+      transform: translateY(130vh);
+    }
+  }
+
+  @keyframes move2 {
+    from {
+      transform: translateY(10vh);
+    }
+    to {
+      transform: translateY(-130vh);
+    }
   }
 }
